@@ -35,5 +35,9 @@ pip install streamlit pandas numpy matplotlib seaborn
 ```
 ## Run steamlit app
 ```
+<<<<<<< Updated upstream
 streamlit run streamlit_app.py
+=======
+streamlit run proyek_akhir_analisis_data_dengan_pyhton.py
+>>>>>>> Stashed changes
 ```
