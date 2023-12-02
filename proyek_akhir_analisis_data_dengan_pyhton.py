@@ -85,3 +85,17 @@ plt.title('Kontribusi Pengguna Casual dan Registered Terhadap Total Penyewaan pe
 plt.xlabel('Hari dalam Seminggu')
 plt.ylabel('Jumlah Penyewaan')
 st.pyplot(plt)
+
+"""# Conlusion
+**Conclution pertanyaan 1**: Berdasarkan barplot kondisi cuaca terhadap jumlah penyewaan dapat saya simpulkan menjadi:
+- weathersit 1 : pada kondisi ini cuaca baik yang berpengaruh pada tingginya penyewaan sepeda.
+-weathersit 2 dan 3 : pada kondisi ini cuaca lebih buruk sehingga terjadi penurunan penyewaan sepeda
+
+**Conclution pertanyaan 2**: berdasarkan visualisasi berdasarkan scatterplot dapat disimpulkan bahwa semakin tinggi cuaca maka semakin tinggi pula jumlah penyewaan sepeda. Hal ini sejalan dengan conlusin pertanyaan 1.
+
+**Conclution pertanyaan 3**: berdasrakan barplot menunujukan hasil bahwa tingkat penyewaan pada *weekdays* lebih tinggi dari pada *weekend*. Hal ini terjadi karena pada saat cuaca yang baik kecenderungan dari orang-orang untuk keluar rumah untuk menikmati keindahan alam.
+
+**Conclution pertanyaan 4**: berdasarkan barplot dapat ditarik kesimpulan bahwa:
+- pada tahun 2011 dan 2012 terlihat pengguna casual dan registered terhadap penyewaan sepeda cukup seragam.
+- pengguna registered memberikan kontribusi lebih tinggi dibandingkan casual dalam penyewaan sepeda.
+- karena tingginya pengguna registered dalam penyewaan sepeda, maka bisnis bisa meningkatkan jumlah pengguna registerednya untuk meningkatkan volume penyewaan ini.
