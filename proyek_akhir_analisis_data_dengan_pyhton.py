@@ -99,3 +99,6 @@ st.pyplot(plt)
 - pada tahun 2011 dan 2012 terlihat pengguna casual dan registered terhadap penyewaan sepeda cukup seragam.
 - pengguna registered memberikan kontribusi lebih tinggi dibandingkan casual dalam penyewaan sepeda.
 - karena tingginya pengguna registered dalam penyewaan sepeda, maka bisnis bisa meningkatkan jumlah pengguna registerednya untuk meningkatkan volume penyewaan ini.
+
+Created by Sopyan
+"""
