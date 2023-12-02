@@ -21,7 +21,7 @@ Analisis data dilakukan dengan menggunakan Python dan berbagai library seperti p
 
 ## Dashboard
 
-Dashboard interaktif dibuat dengan menggunakan Streamlit untuk memvisualisasikan hasil analisis data secara interaktif. Dashboard dapat diakses [di sini](https://visualisasi-data-9qrpggkchskjzcyjpmqnte.streamlit.app/)
+Dashboard interaktif dibuat dengan menggunakan Streamlit untuk memvisualisasikan hasil analisis data secara interaktif. Dashboard dapat diakses [di sini](https://sopyanudara.streamlit.app/)
 
 ## Setup Environment
 Anda perlu membuat environment khusus menggunakan Conda dan menginstall dependensi yang diperlukan. Ikuti langkah-langkah berikut:
