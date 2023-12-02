@@ -39,7 +39,7 @@ sns.barplot(
     data=day_df,
     palette="viridis"
 )
-plt.title("Variasi Ketersediaan Sepeda Berdasrkan Kondisi Cuaca", loc="center", fontsize=15)
+plt.title("Variasi Ketersediaan Sepeda Berdasarkan Kondisi Cuaca", loc="center", fontsize=15)
 plt.ylabel("Jumlah Penyewaan")
 plt.xlabel("Kondisi Cuaca")
 plt.tick_params(axis='x', labelsize=12)
@@ -57,7 +57,7 @@ sns.scatterplot(
 )
 plt.title("Hubungan Antara Suhu dan Jumlah Penyewaan Sepeda Harian", loc="center", fontsize=15)
 plt.ylabel("Jumlah Penyewaan")
-plt.xlabel("KSuhu")
+plt.xlabel("Suhu")
 plt.tick_params(axis='x', labelsize=12)
 st.pyplot(plt)
 
