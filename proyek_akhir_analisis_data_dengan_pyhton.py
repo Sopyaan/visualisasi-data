@@ -14,9 +14,11 @@ Original file is located at
 ## Menentukan Pertanyaan Bisnis
 
 - pertanyaan 1 : Bagaimana variasi ketersediaan sepeda berdasarkan kondisi cuaca (weathersit) pada hari-hari tertentu? Apakah cuaca yang baik memengaruhi peningkatan penyewaan?
-- pertanyaan 2 : Bagaimana hubungan antara suhu (temp) dan jumlah penyewaan sepeda harian? Apakah terdapat tren atau pola tertentu?
-- pertanyaan 3 : Apakah ada perbedaan antara distribusi penyewaan sepeda antara weekend dan weekdays?
-- pertanyaan 4 : Bagaimana kontribusi pengguna casual dan registered terhadap total penyewaan sepeda?
+- Pertanyaan 2 : Bagaimana tren jumlah penyewaan sepeda per bulan dari Januari 2011 hingga Desember 2012?
+- pertanyaan 3 : Bagaimana hubungan antara suhu (temp) dan jumlah penyewaan sepeda harian? Apakah terdapat tren atau pola tertentu?
+- pertanyaan 4 : Apakah ada perbedaan antara distribusi penyewaan sepeda antara weekend dan weekdays?
+- pertanyaan 5 : Bagaimana kontribusi pengguna casual dan registered terhadap total penyewaan sepeda?
+- Pertanyaan 6 : Bagaimana performa atau tren peminjaman dalam periode satu tahun terakhir?
 
 ## Menyiapkan semua library yang dibuthkan
 """
@@ -47,11 +49,11 @@ plt.xlabel("Kondisi Cuaca")
 plt.tick_params(axis='x', labelsize=12)
 st.pyplot(plt)
 
-# Monthly rental trends from January 2011 to December 2012
+#Performa peminjaman sepeda bulanan (Tahun 2011 - Tahun 2012)
 bulanan = hour_df.groupby(pd.Grouper(key='dteday', freq='ME')).sum()
 plt.figure(figsize=(10, 3))
 plt.plot(bulanan.index, bulanan['cnt'], marker='o', linestyle='-')
-plt.title('Total Peminjaman Sepeda Bulanan (Tahun 2011 - Tahun 2012)')
+plt.title('Performa Peminjaman Sepeda Bulanan (Tahun 2011 - Tahun 2012)')
 plt.xlabel('Bulan')
 plt.ylabel('Jumlah Penyewaan')
 plt.grid(True)
