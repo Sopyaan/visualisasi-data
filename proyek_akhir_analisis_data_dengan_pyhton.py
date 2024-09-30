@@ -26,8 +26,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 #uploading dataset yang digunakan
-day_df = pd.read_csv('C:\Users\Sopyan wae\Downloads\visualisasi data\day.csv')
-hour_df = pd.read_csv('C:\Users\Sopyan wae\Downloads\visualisasi data\hour.csv')
+day_df = pd.read_csv('day.csv')
+hour_df = pd.read_csv('hour.csv')
 
 #Hubungan Ketersediaan Sepeda Berdasrkan Kondisi Cuaca
 
