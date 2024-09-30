@@ -45,6 +45,16 @@ plt.xlabel("Kondisi Cuaca")
 plt.tick_params(axis='x', labelsize=12)
 st.pyplot(plt)
 
+# Question 2: Monthly rental trends from January 2011 to December 2012
+bulanan = hour_df.groupby(pd.Grouper(key='dteday', freq='ME')).sum()
+plt.figure(figsize=(10, 3))
+plt.plot(bulanan.index, bulanan['cnt'], marker='o', linestyle='-')
+plt.title('Total Peminjaman Sepeda Bulanan (Tahun 2011 - Tahun 2012)')
+plt.xlabel('Bulan')
+plt.ylabel('Jumlah Penyewaan')
+plt.grid(True)
+st.pyplot(plt)  # Streamlit plotting
+
 #Hubungan antara suhu dan jumlah penyewaan sepeda harian
 
 plt.figure(figsize=(10, 5))
