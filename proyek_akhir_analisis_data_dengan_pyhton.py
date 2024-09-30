@@ -47,7 +47,7 @@ plt.xlabel("Kondisi Cuaca")
 plt.tick_params(axis='x', labelsize=12)
 st.pyplot(plt)
 
-# Question 2: Monthly rental trends from January 2011 to December 2012
+# Monthly rental trends from January 2011 to December 2012
 bulanan = hour_df.groupby(pd.Grouper(key='dteday', freq='ME')).sum()
 plt.figure(figsize=(10, 3))
 plt.plot(bulanan.index, bulanan['cnt'], marker='o', linestyle='-')
@@ -96,6 +96,18 @@ sns.barplot(data=day_df, x='weekday', y='cnt', hue='yr', palette='viridis')
 plt.title('Kontribusi Pengguna Casual dan Registered Terhadap Total Penyewaan per Tahun')
 plt.xlabel('Hari dalam Seminggu')
 plt.ylabel('Jumlah Penyewaan')
+st.pyplot(plt)
+
+# Question 6: Performance in the last year
+data = hour_df[hour_df['yr'] == 1]
+bulan = data.groupby(pd.Grouper(key='dteday', freq='ME')).sum()
+plt.figure(figsize=(11, 4))
+plt.plot(bulan.index, bulan['cnt'], marker='o', linestyle='-')
+plt.xticks(bulan.index, bulan.index.strftime('%b'))
+plt.title('Performa Peminjaman Sepeda Setahun Terakhir')
+plt.xlabel('Bulan')
+plt.ylabel('Jumlah Penyewaan')
+plt.grid(True)
 st.pyplot(plt)
 
 """## Conclusion
