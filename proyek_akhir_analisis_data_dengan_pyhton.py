@@ -29,6 +29,8 @@ import seaborn as sns
 day_df = pd.read_csv('day.csv')
 hour_df = pd.read_csv('hour.csv')
 
+hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
+
 #Hubungan Ketersediaan Sepeda Berdasrkan Kondisi Cuaca
 
 plt.figure(figsize=(10, 5))
